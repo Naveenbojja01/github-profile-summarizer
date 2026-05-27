@@ -50,7 +50,7 @@ pipeline {
 
   stage('Deploy image'){
     steps{
-      sh 'docker run -d -p 8081:80 $IMAGE_NAME:$IMAGE_TAG'
+      sh 'docker run -d -p 8082:80 $IMAGE_NAME:$IMAGE_TAG'
     }
    }
   }
